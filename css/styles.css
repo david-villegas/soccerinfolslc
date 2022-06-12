@@ -1,0 +1,76 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+html * {
+  font-family: 'Bree Serif', serif;
+}
+
+body{
+  background-color: black;
+}
+
+/* Carousel */
+.pt-carousel {
+  padding-top: 76px;
+}
+
+.carousel-item img{
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+
+/* Footer Social Icons*/
+
+.ft ul {
+	margin : 0;
+	padding : 0;
+	text-align : center;
+}
+.ft ul li {
+	list-style : none outside none;
+	padding-right : 10px;
+	display : inline;
+}
+.ft ul li a {
+	display : inline-block;
+	margin : 0 auto;
+	padding : 7px 11px;
+	text-align : center;
+}
+.ft ul li a:hover {
+  -webkit-transform: scale(1.25); /*Safari y Chrome*/
+  -moz-transform:scale(1.25); /*Firefox */
+  -ms-transform:scale(1.25); /*Opera*/
+  -o-transform:scale(1.25); /*IE 9*/
+  transform: scale(1.25);
+  transition: all 0.5s ease 0s;
+}
+.ft ul li a i {
+	color : white;
+	font-size : 25px;
+	transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+}
+.ft .pp-facebook:hover i{
+  color: #3b5894;
+}
+.ft .pp-twitter:hover i{
+  color: #1da1f2;
+}
+.ft .pp-instagram:hover i{
+  color: #e67135;
+}
+.ft .pp-google:hover i{
+  color: #dd4b39;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 767px) {
+  .navbar_title {
+    font-size: 1.2rem;
+  }
+}
