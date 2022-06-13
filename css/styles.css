@@ -26,12 +26,27 @@ body{
 }
 
 .results {
-  background-color: gray;
-
+  margin-top: 3px;
+  border-radius: 5px;
+  -webkit-transition: .2s all ease-in-out;
+  -o-transition: .2s all ease-in-out;
+  transition: .2s all ease-in-out;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
-.matches img {
+
+.results:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-box-shadow: 0 5px 40px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 40px -5px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+}
+
+.img-team img {
   width: 45px;
   height: 45px;
+  border-radius: 50%;
 }
 
 /* Footer Social Icons*/
