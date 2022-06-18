@@ -4,8 +4,12 @@ html * {
   font-family: 'Bree Serif', serif;
 }
 
-body{
-  background-color: black;
+body {
+  background-color: #f8f9fa !important;
+  /* background-image: url('../img/v960-ning-19.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; */
 }
 
 /* Carousel */
