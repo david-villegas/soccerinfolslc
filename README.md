@@ -4,7 +4,7 @@
 * HTML
 * CSS
 * JS
-* Bootstrap
+* Bootstrap 4.6.1
 
 # Preview
 Ingresa en el siguiente enlace [Academia LSLC](https://app.netlify.com/sites/futbol-lslc)
