@@ -7,4 +7,4 @@
 * Bootstrap 4.6.1
 
 # Preview
-Ingresa en el siguiente enlace [Academia LSLC](https://app.netlify.com/sites/futbol-lslc)
+Ingresa en el siguiente enlace [Academia LSLC](https://futbol-lslc.netlify.app/)
