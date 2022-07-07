@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header .titulo {
-    font-size: 2rem;
+    font-size: 3rem;
     text-transform: uppercase;
 }
 
@@ -86,3 +86,6 @@ h1, h2, h3, h4, h5, h6 {
     25% { transform: translateY(0);}
     100% { transform: translateY(20px);}
 }
+
+/*color de la franja roja #F0454E */
+/*color de la franja amarillla #EAB11F */
