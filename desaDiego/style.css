@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+body { 
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.texto-naranja {
+    font-weight: 300;
+    color: orange;
+}
+
+.texto-blanco {
+    font-weight: 700;
+    color: #fff;
+}
+
+.texto-negro {
+	color: #000;
+}
+
+/* header */
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("/desaDiego/img/hal-gatewood-AzDHa9F9uBY-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header .contenedor-titulo {
+    text-align: center;
+    position: relative;
+    z-index: 99;
+}
+
+.header .titulo {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.header .subtitulo {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.header .contenedor-icono {
+    position: absolute;
+    z-index: 99;
+    bottom: 3%;
+    left: 50%;
+    animation: bajar-subir 1s ease infinite;
+}
+
+.header .contenedor-icono .icono {
+    width: 12%;
+    fill: white;
+}
+
+.bg-video {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background: #000;
+    background-position: center;
+    background-size: contain;
+    object-fit: cover;
+
+}
+
+@keyframes bajar-subir {
+    0% { transform: translateY(20px);}
+    25% { transform: translateY(0);}
+    100% { transform: translateY(20px);}
+}
