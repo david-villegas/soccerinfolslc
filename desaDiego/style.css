@@ -63,13 +63,23 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
     font-size: 0.8rem;
-    /* color: #c2c2c2; */
-    color: #EAB11F;
+    color: #c2c2c2;
     transition: .5s ease
 }
 
 .nav li.active {
     border-bottom: 2px solid #EAB11F;
+}
+
+.menu li a {
+    transition: .5s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li.active a,
+.menu li:hover a {
+    color: #EAB11F;
 }
 
 /* header */
@@ -129,6 +139,83 @@ h1, h2, h3, h4, h5, h6 {
     0% { transform: translateY(20px);}
     25% { transform: translateY(0);}
     100% { transform: translateY(20px);}
+}
+
+/* Section Ultimos Resultados*/
+
+.review {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10rem;
+}
+  
+.review .review-slider{
+    padding-bottom: 2rem; 
+}
+
+.review .review-slider .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.review .review-slider .swiper-wrapper .swiper-slide {
+    width: 30%;
+    margin: 0 10px;
+}
+  
+.review .box{
+    padding:2rem;
+    text-align: center;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+  
+.review .box img{
+    height:13rem;
+    width:13rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+  
+.review .box h3{
+    color:#333;
+    font-size: 1.3rem;
+}
+  
+.review .box p{
+    color:#666;
+    font-size: 1rem;
+    padding:1rem 0;
+}
+
+.review .box .score .textScore {
+    width: 30%;
+    height: 50px;
+    margin:  0 auto;
+    background-color: #666;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review .box .score .textScore h4 {
+    color: #EAB11F;
+}
+  
+.review .box .stars i{
+    color: #F0454E;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 900px) {
+    .review .review-slider .swiper-wrapper .swiper-slide {
+        width: 90%;
+        margin: 10px auto;
+    }
 }
 
 /*color de la franja roja #F0454E */

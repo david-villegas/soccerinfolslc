@@ -19,5 +19,7 @@ var seccionesPagina = new fullpage('#fullpage', {
 	anchors: ['inicio', 'ultimosResultados', 'proximosJuegos', 'contacto'], // Anclas, las usamos para identificar cada seccion y poder acceder a ellas con el menu.
 	navigationTooltips: ['Inicio', 'Ultimos Resultados', 'Proximos Juegos', 'Contacto'], // Tooltips que mostrara por cada boton.
 	showActiveTooltip: false, // Mostrar tooltip activa.
-
+	
+	
 });
+
