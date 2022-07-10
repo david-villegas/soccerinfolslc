@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .texto-naranja {
     font-weight: 300;
-    color: orange;
+    color: #EAB11F;
 }
 
 .texto-blanco {
@@ -26,6 +26,50 @@ h1, h2, h3, h4, h5, h6 {
 
 .texto-negro {
 	color: #000;
+}
+
+/* ──────────────────────────────────────────────────
+/   :::::: Opciones Basicas
+/ ────────────────────────────────────────────────── */
+
+#fp-nav ul li a span {
+    background-color: #EAB11F;
+}
+
+#fp-nav ul li .fp-tooltip  {
+    color: #EAB11F
+}
+
+/* ──────────────────────────────────────────────────
+/   :::::: Menu
+/ ────────────────────────────────────────────────── */
+
+.nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 70;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.nav li,
+.nav a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8rem;
+    /* color: #c2c2c2; */
+    color: #EAB11F;
+    transition: .5s ease
+}
+
+.nav li.active {
+    border-bottom: 2px solid #EAB11F;
 }
 
 /* header */
