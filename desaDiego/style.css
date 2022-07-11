@@ -1,10 +1,10 @@
 * {
     box-sizing: border-box;
-    margin: 0; 
+    margin: 0;
     padding: 0;
 }
 
-body { 
+body {
     font-family: 'Lato', sans-serif;
     font-size: 18px;
 }
@@ -149,9 +149,9 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
     padding-top: 10rem;
 }
-  
+
 .review .review-slider{
-    padding-bottom: 2rem; 
+    padding-bottom: 2rem;
 }
 
 .review .review-slider .swiper-wrapper {
@@ -165,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 30%;
     margin: 0 10px;
 }
-  
+
 .review .box{
     padding:2rem;
     text-align: center;
@@ -182,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
-  
+
 .review .box img{
     height:13rem;
     width:13rem;
@@ -190,12 +190,12 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
     margin-bottom: 1rem;
 }
-  
+
 .review .box h3{
     color:#fff;
     font-size: 1.3rem;
 }
-  
+
 .review .box p{
     color:#fff;
     font-size: 1rem;
@@ -216,7 +216,7 @@ h1, h2, h3, h4, h5, h6 {
 .review .box .score .textScore h4 {
     color: #EAB11F;
 }
-  
+
 .review .box .stars i{
     color: #F0454E;
     font-size: 1.2rem;
@@ -236,6 +236,10 @@ article {
     background-size: cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../desaDiego/img/Lcolegial.jpg");
 }
+
+/* article:nth-child(2) {
+    background-image: url(../desaDiego/img/colegial.jpg);
+} */
 
 
 /* ──────────────────────────────────────────────────
@@ -259,8 +263,79 @@ article {
     border-color: transparent transparent transparent #F0454E;
 }
 
+/* ──────────────────────────────────────────────────
+/   :::::: Proximos Partidos
+/ ────────────────────────────────────────────────── */
 
+.proximosPartidos {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url("/desaDiego/img/pexels-tom-fisk-3441727.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
+.proximosJuegos h1 {
+    font-size: 2rem;
+    color: #EAB11F;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.containerCards {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-card {
+    width: 50%;
+    height: 220px;
+    border-radius: 2rem;
+    background-image: linear-gradient(rgba(2, 2, 2, 0.9), rgba(0, 0, 0, 0.7)), url("/desaDiego/img/sub10-2.jpeg");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    margin: 1rem 0;
+
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.minicar {
+    width: 10%;
+    background-color: transparent;
+}
+
+.minicar img {
+    width: 100%;
+}
+
+.containerText {
+    width: 100%;
+    line-height: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.containerText .vs {
+    color: #EAB11F;
+    font-size: 1.5rem;
+}
+
+.containerText .vshora {
+    color: #EAB11F;
+    font-size: 1.2rem;
+}
 
 
 /* ──────────────────────────────────────────────────
@@ -269,7 +344,7 @@ article {
 
 @media (max-width: 768px) {
 
-    
+
     /*review*/
 
     .review {
@@ -278,7 +353,7 @@ article {
     .review .review-slider .swiper-wrapper .swiper-slide {
         width: 90%;
         margin: 10px auto;
-    } 
+    }
 
     .review .box {
         display: flex;
@@ -292,10 +367,6 @@ article {
         margin-bottom: 0.5rem;
     }
 
-    /* .review .box .score {
-        height: 50px;
-    } */
-
     .review .box .stars {
         display: none;
     }
@@ -307,6 +378,12 @@ article {
     .review .box h3 {
         font-size: 1rem;
     }
+
+    /* proximos juegos */
+
+    .container-card {
+        width: 100%;
+    }
 }
 
 
@@ -315,7 +392,7 @@ article {
     .review .review-slider .swiper-wrapper .swiper-slide {
         width: 100%;
     }
- 
+
     .review .box {
         padding: 0;
     }
@@ -336,15 +413,27 @@ article {
 
     .fp-controlArrow.fp-prev {
         left: 25%;
-        
+
     }
-    
+
     .fp-controlArrow.fp-next {
         right: 25%;
-        
+
     }
-    
-    
+
+    /* proximos juegos */
+
+    .container-card {
+        width: 100%;
+    } 
+
+    .containerText {
+        font-size: 1rem;
+    }
+
+   
+
+
 }
 
 /*color de la franja roja #F0454E */
