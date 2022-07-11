@@ -169,10 +169,18 @@ h1, h2, h3, h4, h5, h6 {
 .review .box{
     padding:2rem;
     text-align: center;
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
-    border-radius: .5rem;
-    border: 1px solid rgba(234, 177, 31, 0.300);
-    background-color: #fff;
+    /* box-shadow: 0 1rem 2rem rgba(0,0,0,.1); */
+    /* border-radius: .5rem; */
+    /* border: 1px solid rgba(234, 177, 31, 0.300); */
+    /* background-color: #fff; */
+
+    background: rgba( 255, 255, 255, 0 );
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    box-shadow: 0 8px 32px 0 rgb(234, 177, 31, 0.25);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
   
 .review .box img{
@@ -184,12 +192,12 @@ h1, h2, h3, h4, h5, h6 {
 }
   
 .review .box h3{
-    color:#333;
+    color:#fff;
     font-size: 1.3rem;
 }
   
 .review .box p{
-    color:#666;
+    color:#fff;
     font-size: 1rem;
     padding:1rem 0;
 }
@@ -214,7 +222,55 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.2rem;
 }
 
+/* ──────────────────────────────────────────────────
+/   :::::: Ultimos Resultados
+/ ────────────────────────────────────────────────── */
+
+.ultimosResultados h1 {
+    font-size: 2rem;
+    color: #EAB11F;
+}
+
+article {
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../desaDiego/img/Lcolegial.jpg");
+}
+
+
+/* ──────────────────────────────────────────────────
+/   :::::: Flechas Slide
+/ ────────────────────────────────────────────────── */
+
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev {
+    top: 95%;
+}
+
+.fp-controlArrow.fp-prev {
+    left: 45%;
+    border-width: 20px 20px 20px 0;
+    border-color: transparent #F0454E transparent transparent;
+}
+
+.fp-controlArrow.fp-next {
+    right: 45%;
+    border-width: 20px 0 20px 20px;
+    border-color: transparent transparent transparent #F0454E;
+}
+
+
+
+
+
+/* ──────────────────────────────────────────────────
+/   :::::: Mediaqueris
+/ ────────────────────────────────────────────────── */
+
 @media (max-width: 768px) {
+
+    
+    /*review*/
 
     .review {
         padding-top: 1rem;
@@ -222,6 +278,12 @@ h1, h2, h3, h4, h5, h6 {
     .review .review-slider .swiper-wrapper .swiper-slide {
         width: 90%;
         margin: 10px auto;
+    } 
+
+    .review .box {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
     .review .box img {
@@ -230,9 +292,9 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 0.5rem;
     }
 
-    .review .box .score {
+    /* .review .box .score {
         height: 50px;
-    }
+    } */
 
     .review .box .stars {
         display: none;
@@ -247,17 +309,47 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+
+@media (max-width: 425px) {
+
+    .review .review-slider .swiper-wrapper .swiper-slide {
+        width: 100%;
+    }
+ 
+    .review .box {
+        padding: 0;
+    }
+
+    .review .box h3 {
+        font-size: 0.8rem;
+    }
+
+    .review .box .score p {
+        font-size: 0.7rem;
+    }
+
+    .review .box .score .textScore {
+        width: 50%;
+    }
+
+    /*flechas ultimos resultados*/
+
+    .fp-controlArrow.fp-prev {
+        left: 25%;
+        
+    }
+    
+    .fp-controlArrow.fp-next {
+        right: 25%;
+        
+    }
+    
+    
+}
+
 /*color de la franja roja #F0454E */
 /*color de la franja amarillla #EAB11F */
 
 
-/* ──────────────────────────────────────────────────
-/   :::::: Ultimos Resultados
-/ ────────────────────────────────────────────────── */
 
-article {
-    background-position: center;
-    background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../desaDiego/img/Lcolegial.jpg");
-}
 
