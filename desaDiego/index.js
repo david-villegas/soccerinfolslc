@@ -2,7 +2,7 @@ var seccionesPagina = new fullpage('#fullpage', {
     // ──────────────────────────────────────────────────
 	//   :::::: Opciones Basicas
 	// ──────────────────────────────────────────────────
-	autoScrolling: true, // Se activa el scroll.
+	autoScrolling: false, // Se activa el scroll.
 	fitToSection: false, // Acomoda el scroll automaticamente para que la seccion se muestre en pantalla.
 	fitToSectionDelay: 300, // Delay antes de acomodar la seccion automaticamente.
 	easing: 'easeInOutCubic', // Funcion de tiempo de la animacion.
@@ -25,6 +25,17 @@ var seccionesPagina = new fullpage('#fullpage', {
 	// ──────────────────────────────────────────────────
 	sectionsColor : ['#000', '#c2c2c2', '#000'], // Color de fondo de cada seccion.
 	verticalCentered: true, // Si alineara de forma vertical los contenidos de cada seccion.
+
+	// ──────────────────────────────────────────────────
+	//   :::::: Slides
+	// ──────────────────────────────────────────────────
+	controlArrows: true, // Flechas del slide
+	slidesNavigation: true, // Indicadores del slide
+	afterLoad: function(origin, destination) {
+		if(destination.anchor == 'contacto') {
+			document.querySelector('.footer h2').style.opacity = 1;
+		}
+	}
 	
 });
 
