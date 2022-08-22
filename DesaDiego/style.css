@@ -104,3 +104,39 @@ li {
     top: 50%;
     color: #fff;
 }
+
+/*mediaqueri*/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .header {
+        display: flex;
+    }
+    .nav {
+        left: 0;
+        top: 0;
+        position: relative;
+        padding-right: 20px;
+    }
+    .nav .menu {
+        flex-direction: row;
+        height: 10vh;
+    }
+    .nav .menu li {
+        height: 25px;
+        border-bottom: none;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    .menuContainer {
+        background-color: #cacaca;
+        padding-left: 20px;
+    }
+    .menuContainer img {
+        width: 20%;
+    }
+    .menuContainer .btnHmaburguesa {
+        display: none;
+    }
+
+    
+  }
