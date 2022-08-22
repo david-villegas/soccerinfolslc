@@ -4,35 +4,189 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <title>Fútbol La Salle La Colina</title>
 </head>
 <body>
 
-    <div class="header">
-        <div class="menuContainer">
-            <img src="./img/menu/logoMenu.png " alt="Logo Menu">
-            <img class="btnHmaburguesa" src="./img/menu/menuIcon.svg" alt="Icono Hamburguesa">
-        </div>
-        <div class="nav">
-            <ul class="menu">
-                <li>Inicio</li>
-                <li>Categorias</li>
-                <li>Copas y Ligas</li>
-                <li>Contacto</li>
-            </ul>
-        </div>
-    </div>
-    <div class="hero">
-        <h1 class="tituloHero">Fútbol La Salle <br> <span class="color-orange">La Colina</span></h1>
-        <picture>
-            <source srcset="img/ImgHero/big.jpg" media="(min-width:1440px">
-            <source srcset="img/ImgHero/mediun.jpg" media="(min-width:1024px">
-            <source srcset="img/ImgHero/small.jpg" media="(min-width:768px">
-            <img src="./img/ImgHero/small.jpg" alt="Imagen Principal del seccion Hero">
-        </picture>
-    </div>
+    <main>
+        <section class="containerHerder">
+            <div class="header">
+                <div class="menuContainer">
+                    <img src="./img/menu/logoMenu.png " alt="Logo Menu">
+                    <img class="btnHmaburguesa" src="./img/menu/menuIcon.svg" alt="Icono Hamburguesa">
+                </div>
+                <div class="nav">
+                    <ul class="menu">
+                        <li>Inicio</li>
+                        <li>Categorias</li>
+                        <li>Copas y Ligas</li>
+                        <li>Contacto</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hero">
+                <h1 class="tituloHero">Fútbol La Salle <br> <span class="color-orange">La Colina</span></h1>
+                <picture>
+                    <source srcset="img/ImgHero/big.jpg" media="(min-width:1440px">
+                    <source srcset="img/ImgHero/mediun.jpg" media="(min-width:1024px">
+                    <source srcset="img/ImgHero/small.jpg" media="(min-width:768px">
+                    <img src="./img/ImgHero/small.jpg" alt="Imagen Principal del seccion Hero">
+                </picture>
+            </div>
+        </section>
+
+        <section class="resultados">
+            <!-- CONTENT -->
+            <div id="resultados" class="site-section">
+                <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mb-5">
+                    <h1 class="text-center">Últimos Resultados</h1>
+                    </div>
+                    <!-- NAV PILLS -->
+                    <div class="col-md-12">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Liga Colegial</a>
+                        <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Liga Pipo Rossi</a>
+                        <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Amistosos</a>
+                        </div>
+                    </nav>
+
+                    <!-- RESULTS -->
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="container results">
+                            <div class="row py-4 text-center">
+                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                <div class="img-team">
+                                <img src="/img/logo.jpg" alt="">
+                                </div>
+                                <div class="ml-3">La Salle La Colina</div>
+                            </div>
+                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                <div class="bg-dark py-2 pl-3 pr-3 text-white rounded">3 : 2</div>
+                            </div>
+                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                <div class="mr-3">La Salle La Colina</div>
+                                <div class="img-team">
+                                <img src="/img/logo.jpg" alt="">
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="container results">
+                            <div class="row py-4 text-center">
+                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                <div class="img-team">
+                                <img src="/img/logo.jpg" alt="">
+                                </div>
+                                <div class="ml-3">La Salle La Colina</div>
+                            </div>
+                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                <div class="bg-dark py-2 pl-3 pr-3 text-white rounded">1 : 0</div>
+                            </div>
+                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                <div class="mr-3">La Salle La Colina</div>
+                                <div class="img-team">
+                                <img src="/img/logo.jpg" alt="">
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="container results">
+                            <div class="row py-4 text-center">
+                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                <div class="img-team">
+                                <img src="/img/logo.jpg" alt="">
+                                </div>
+                                <div class="ml-3">La Salle La Colina</div>
+                            </div>
+                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                <div class="bg-dark py-2 pl-3 pr-3 text-white rounded">3 : 2</div>
+                            </div>
+                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                <div class="mr-3">La Salle La Colina</div>
+                                <div class="img-team">
+                                <img src="/img/logo.jpg" alt="">
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="container results">
+                            <div class="row py-4 text-center">
+                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                <div class="img-team">
+                                <img src="/img/logo.jpg" alt="">
+                                </div>
+                                <div class="ml-3">La Salle La Colina</div>
+                            </div>
+                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                <div class="bg-dark py-2 pl-3 pr-3 text-white rounded">1 : 0</div>
+                            </div>
+                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                <div class="mr-3">La Salle La Colina</div>
+                                <div class="img-team">
+                                <img src="/img/logo.jpg" alt="">
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <div class="container results">
+                            <div class="row py-4 text-center">
+                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                <div class="img-team">
+                                <img src="/img/logo.jpg" alt="">
+                                </div>
+                                <div class="ml-3">La Salle La Colina</div>
+                            </div>
+                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                <div class="bg-dark py-2 pl-3 pr-3 text-white rounded">3 : 2</div>
+                            </div>
+                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                <div class="mr-3">La Salle La Colina</div>
+                                <div class="img-team">
+                                <img src="/img/logo.jpg" alt="">
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="container results">
+                            <div class="row py-4 text-center">
+                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                <div class="img-team">
+                                <img src="/img/logo.jpg" alt="">
+                                </div>
+                                <div class="ml-3">La Salle La Colina</div>
+                            </div>
+                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                <div class="bg-dark py-2 pl-3 pr-3 text-white rounded">1 : 0</div>
+                            </div>
+                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                <div class="mr-3">La Salle La Colina</div>
+                                <div class="img-team">
+                                <img src="/img/logo.jpg" alt="">
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>      <!-- END RESULTS -->
+        </section>
+    </main>
     
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <script src="./main.js"></script>
 </body>
 </html>
