@@ -1,3 +1,7 @@
+:root {
+    --colorRedMain: #F8C745;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -86,28 +90,53 @@ li {
 
 .hero {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     position: absolute;
-    top: 0;
+    top: 10vh;
     left: 0;
+    background-color: #191D3E;
 }
 
-.hero img {
+.hero .contaUp {
+    width: 100%;
+    height: 60%;
+    
+    background-color: #191D3E;
+}
+
+.hero .contaDown {
+    width: 100%;
+    height: 40%;
+    background-color: #fff;
+}
+
+.hero .contaUp .containerUp {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
+    background-color: #fff;
+    border-radius: 0 0 20% 0;
 }
 
-.hero .tituloHero {
+.hero .contaUp .containerUp .imgHero {
     width: 100%;
-    text-align: center;
-    z-index: 98;
-    position: absolute;
-    top: 50%;
-    color: #fff;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.hero .contaUp .containerUp .imgHero img {
+    width: 70%;
+}
+
+.hero .contaDown .containerDown {
+    width: 100%;
+    height: 100%;
+    background-color: #191D3E;
+    border-radius: 20% 0 0 0;
+}
+
+
 
 /*resultados*/
 
@@ -151,6 +180,7 @@ li {
         top: 0;
         position: relative;
         padding-right: 20px;
+        height: 10vh;
     }
     .nav .menu {
         flex-direction: row;
