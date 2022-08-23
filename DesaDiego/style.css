@@ -134,9 +134,14 @@ li {
     height: 100%;
     background-color: #191D3E;
     border-radius: 20% 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
+.hero .contaDown .containerDown .tituloHero {
+    color: #fff;
+}
 
 /*resultados*/
 
