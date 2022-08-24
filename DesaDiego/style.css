@@ -161,7 +161,7 @@ li {
 
 .containerResult img {
     display: block;
-    width: 40%;
+    width: 25%;
     color: transparent;
     margin: 20px auto;
     border-radius: 20%;
@@ -197,17 +197,22 @@ li {
 
 .NameLigue {
     text-align: center;
+    padding-bottom: 30px;
 }
 
 .contaResul {
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    padding-top: 30px;
-    background-image: url(./img/ImgHero/resul4.jpg);
-    background-repeat: no-repeat;
+    border-radius: 5%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(./img/ImgHero/marcador.png); 
     background-position: center;
+    background-size: 100% 100%;
+    color: #fff;
 }
 
 .nombreTeam {
@@ -220,12 +225,12 @@ li {
 
 
 .boxResul {
-    width: 50px;
+    width: 100px;
     background-color: #191D3E;
     color: #fff;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
