@@ -15,7 +15,8 @@
 }
 
 body {
-    font-family: 'Bree Serif', serif;
+    /* font-family: 'Bree Serif', serif; */
+    font-family: sans-serif;
 }
 
 /*header*/
@@ -77,7 +78,6 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    ;
 }
 
 li {
@@ -144,9 +144,10 @@ li {
 }
 
 .hero .contaDown .containerDown .tituloHero {
+    width: 70%;
     color: #fff;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 500;
 }
 /*resultados*/
@@ -161,7 +162,7 @@ li {
     height: auto;
     /* background-color: #191D3E; */
     color: #fff;
-    padding: 60px 0;
+    padding-top: 60PX;
     border-radius: 0 0 0 20%;
 }
 
@@ -174,9 +175,10 @@ li {
 }
 
 .textResult {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
     text-align: center;
     color: #191D3E;
     letter-spacing: 5px;
@@ -203,6 +205,10 @@ li {
     border-radius: 20% 20% 0 0;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+.Resul:nth-child(3) {
+    padding-bottom: 60PX;
 }
 
 .NameLigue {
@@ -249,7 +255,8 @@ li {
 .proximosJuegos {
     width: 100%;
     height: auto;
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 0;
     background-color: #191D3E;
 }
 
@@ -260,9 +267,10 @@ li {
 }
 
 .textProximoJuegos {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
     text-align: center;
     color: #fff;
     letter-spacing: 5px;
@@ -277,16 +285,52 @@ li {
     border-radius: 20%;
 }
 
-.carProxijuego {
+.containerBack {
     width: 100%;
     height: 100%;
     background-color: orange;
+}
+
+.containerProxiJuegos {
+    margin-top: 60PX;
+}
+
+.contaBck2 {
+    margin-top: 0;
+    background-color: orange;
+}
+
+.carProxijuego {
+    width: 100%;
+    height: 100%;
     border-radius: 0 30% 0 0;
     text-align: center;
     padding: 20px 0;
     line-height: 2rem;
     font-size: 1.2rem;
+    background-color: orange;
 }
+
+.carBack2 {
+    /* background-color: #4F7D6D; */
+    background-color: #191D3E;
+    color: orange;
+}
+
+.carBack2 .carBackLink {
+    color: orange;
+}
+
+.carBack2 img {
+    color: orange;
+}
+
+.carProxijuego a {
+    text-decoration: none;
+    color: #191D3E;
+    text-decoration: underline;
+    cursor: pointer;
+} 
 
 .carProxijuego img {
     display: inline-block;
@@ -294,6 +338,53 @@ li {
     margin: 0;
 }
 
+.contaBack3 {
+    width: 100%;
+    height: 100%;
+    background-color: #191D3E;
+    margin-top: 0;
+}
+
+/*Galeria Picture*/
+
+.GaleriaPicture, .containerGaleria {
+    width: 100%;
+    height: auto;
+}
+
+.containerGaleria {
+    padding-top: 60PX;
+}
+
+.textGaleria {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #191D3E;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-bottom: 60PX;
+}
+
+.picture {
+    width: 90%;
+    height: 200px;
+    margin: 15px auto;
+    /* overflow: hidden; */
+    border: 1px solid #191D3E;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
 
 
 /*mediaqueri*/
