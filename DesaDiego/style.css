@@ -400,21 +400,20 @@ footer {
 
 .containerIcons {
     width: 60%;
-    margin: 20px auto;
+    margin: 10px auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 30px;
 }
 
 .containerIcons img {
-    width: 20%;
+    width: 10%;
     margin: 10px;
 }
 
 .textFooter {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .textFooter p {
@@ -450,11 +449,12 @@ footer {
         cursor: pointer;
     }
     .menuContainer {
+        width: 40%;
         background-color: #cacaca;
         padding-left: 20px;
     }
     .menuContainer img {
-        width: 20%;
+        width: 40%;
     }
     .menuContainer .btnHmaburguesa {
         display: none;
