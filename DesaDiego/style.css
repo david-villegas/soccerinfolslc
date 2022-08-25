@@ -368,6 +368,10 @@ li {
     padding-bottom: 60PX;
 }
 
+.pictureContainer {
+    padding-bottom: 30px;
+}
+
 .picture {
     width: 90%;
     height: 200px;
@@ -427,7 +431,7 @@ footer {
 
 /*mediaqueri*/
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 697px) and (max-device-width: 1024px) {
     .header {
         display: flex;
     }
@@ -460,5 +464,136 @@ footer {
         display: none;
     }
 
+    /*hero*/
+
+    .hero .contaUp .containerUp .imgHero img {
+        width: 40%;
+    }
     
-  }
+    /*ultimos resultados*/
+
+    .containerFondo {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .Resul {
+        width: 50%;
+    }
+
+    /*galeria*/
+
+    .pictureContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .picture {
+        width: 45%;
+    }
+    
+}
+
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1980px) {
+    .header {
+        display: flex;
+    }
+    .nav {
+        left: 0;
+        top: 0;
+        position: relative;
+        padding-right: 20px;
+        height: 10vh;
+    }
+    .nav .menu {
+        width: 100%;
+        flex-direction: row;
+        height: 10vh;
+        justify-content: flex-end;
+    }
+    .nav .menu li {
+        width: 150px;
+        height: 25px;
+        border-bottom: none;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    .menuContainer {
+        width: 40%;
+        background-color: #cacaca;
+        padding-left: 20px;
+    }
+    .menuContainer img {
+        width: 20%;
+    }
+    .menuContainer .btnHmaburguesa {
+        display: none;
+    }
+
+    /*hero*/
+    .hero .contaUp .containerUp .imgHero img {
+        width: 40%;
+    }
+
+    .hero .contaDown .containerDown .tituloHero {
+        font-size: 4rem;
+    }
+
+    /* ultimos resultados*/
+
+    .textResult {
+        font-size: 3rem;
+        padding-top: 60px;
+    }
+
+    .containerFondo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Resul {
+        width: 30%;
+        height: 500px;
+    }
+
+    .Resul:nth-child(3) {
+        padding-bottom: 30px;
+    }
+
+    /*proximos juegos*/
+
+    .textProximoJuegos {
+        font-size: 2rem;
+        padding-top: 60px;
+    }
+
+    .proximosJuegos img {
+        width: 3%;
+    }
+
+    .proximosJuegos .pictureProximo {
+        width: 15%;
+    }
+
+    .carProxijuego {
+        border-radius: 0%;
+        font-size: 1rem;
+    }
+
+    .containerjuegosProximos {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+ 
+
+}
