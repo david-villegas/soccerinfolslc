@@ -89,6 +89,22 @@ body {
   border-radius: 50%;
 }
 
+.card_bg {
+  background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+}
+
+.card_bg:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75) !important;
+  -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75) !important;
+  box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75) !important;
+  -webkit-transition: .2s all ease-in-out;
+  -o-transition: .2s all ease-in-out;
+  transition: .2s all ease-in-out;
+}
+
 .thead-background {
   /* background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); */
   background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
@@ -146,6 +162,6 @@ body {
 
 @media (max-width: 767px) {
   .navbar_title {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
