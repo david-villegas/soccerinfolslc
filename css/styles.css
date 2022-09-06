@@ -78,8 +78,8 @@ body {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
-  -webkit-box-shadow: 0 5px 40px -5px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 5px 40px -5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 5px 40px -5px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 5px 40px -5px rgba(0, 0, 0, 0.1) !important;
   font-size: 1.2rem;
 }
 
