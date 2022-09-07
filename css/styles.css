@@ -80,7 +80,6 @@ body {
   transform: scale(1.05);
   -webkit-box-shadow: 0 5px 40px -5px rgba(0, 0, 0, 0.1) !important;
   box-shadow: 0 5px 40px -5px rgba(0, 0, 0, 0.1) !important;
-  font-size: 1.2rem;
 }
 
 .img-team img {
@@ -90,7 +89,8 @@ body {
 }
 
 .card_bg {
-  background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+  /* background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%); */
+  background-image: url('../img/v960-ning-19.jpg');
 }
 
 .card_bg:hover {
