@@ -5,7 +5,9 @@ html * {
 }
 
 body {
-  background-color: #f8f9fa !important;
+  /* background-color: #f8f9fa !important; */
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  /* background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%); */
   /* background-image: url('../img/v960-ning-19.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -63,6 +65,7 @@ body {
 }
 
 .results {
+  background-color: #f8f9fa !important;
   margin-top: 3px;
   border-radius: 5px;
   -webkit-transition: .2s all ease-in-out;
@@ -75,15 +78,272 @@ body {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
-  -webkit-box-shadow: 0 5px 40px -5px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 5px 40px -5px rgba(0, 0, 0, 0.1);
-  font-size: 1.2rem;
+  -webkit-box-shadow: 0 5px 40px -5px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 5px 40px -5px rgba(0, 0, 0, 0.1) !important;
 }
 
 .img-team img {
   width: 45px;
   height: 45px;
   border-radius: 50%;
+}
+
+.card_bg {
+  /* background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%); */
+  background-image: url('../img/v960-ning-19.jpg');
+}
+
+.card_bg:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75) !important;
+  -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75) !important;
+  box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75) !important;
+  -webkit-transition: .2s all ease-in-out;
+  -o-transition: .2s all ease-in-out;
+  transition: .2s all ease-in-out;
+}
+
+.flex-container {
+  text-align: initial;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 0.938rem;
+  align-content: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transform: translate3d(0px, 0, 0);
+  transition-property: transform;
+  box-sizing: content-box;
+  align-items: stretch;
+  padding-right: 0;
+}
+
+.flex-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  margin: 0 2rem 1rem 0;
+  background-color: white;
+  overflow: hidden;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  position: relative;
+  transition-property: transform;
+  width: 23.125rem;
+  min-height: 20.625rem;
+  height: auto;
+  padding: 0.938rem 1.25rem 0.938rem 2rem;
+  align-content: stretch;
+  align-items: stretch;
+  border-radius: 5px;
+}
+
+.flex-card:hover {
+  -webkit-transition: .2s all ease-in-out;
+  -o-transition: .2s all ease-in-out;
+  transition: .2s all ease-in-out;
+  -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+  box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+}
+
+.flex-card-information {
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.063rem;
+  line-height: 1;
+  font-weight: 300;
+  color: #3476b6;
+  width: 34%;
+  flex: 0 1 auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+  min-height: auto;
+  margin-bottom: 0;
+}
+
+.flex-card-date {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.063rem;
+  line-height: 1;
+  font-weight: 300;
+  color: #3476b6;
+  box-sizing: inherit;
+  padding: 0;
+  flex: 0 1 auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 2.75rem;
+  width: 5rem;
+  min-height: 6.563rem;
+}
+
+.flex-card-hour {
+  font-family: "Oswald", sans-serif;
+  line-height: 1;
+  color: #3476b6;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 200;
+  flex: 0 1 auto;
+  margin: 0;
+  padding-left: 0.188rem;
+  text-align: left;
+  font-size: 1.25rem;
+}
+
+.flex-card-date-dsm {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  color: #3476b6;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-size: 1.125rem;
+  line-height: 1.38;
+}
+.flex-card-date-dia {
+  font-family: "Oswald", sans-serif;
+  color: #3476b6;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 3.125rem;
+  line-height: 1;
+  letter-spacing: -1.5px;
+  font-weight: 400;
+}
+.flex-card-date-mes {
+  font-family: "Oswald", sans-serif;
+  color: #3476b6;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 1.938rem;
+  line-height: 1.03;
+  letter-spacing: -0.93px;
+  font-weight: 300;
+  margin-left: 0;
+}
+
+.flex-card-teams {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+  flex: 0 1 auto;
+  justify-content: flex-start;
+}
+
+.flex-card-logos {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 0 0.938rem;
+  height: 6.438rem;
+}
+
+.flex-card-logos-img {
+  display: block;
+  width: 4.25rem;
+  height: auto;
+}
+
+.flex-card-details {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 0.875rem;
+  font-weight: 300;
+  padding-left: 0.938rem;
+  margin-bottom: 0;
+}
+
+.flex-card-details-teams {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0 0 0.375rem;
+}
+
+.flex-card-details-teams-local {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  letter-spacing: 0;
+  color: #000000;
+  text-align: left;
+  font-size: 0.875rem;
+  line-height: 0.938rem;
+}
+
+.flex-card-details-teams-visit {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  letter-spacing: 0;
+  color: #000000;
+  display: inline-block;
+  text-align: left;
+  font-size: 0.875rem;
+  line-height: 0.938rem;
+}
+
+.flex-card-details-place {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-weight: 300;
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+  text-align: left;
+}
+.flex-card-details-site {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-size: 0.813rem;
+  text-align: left;
+}
+
+.thead-background {
+  /* background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); */
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+  /* background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%); */
 }
 
 /* Footer Social Icons*/
@@ -137,6 +397,6 @@ body {
 
 @media (max-width: 767px) {
   .navbar_title {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
