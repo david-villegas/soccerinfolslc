@@ -88,9 +88,11 @@ body {
   border-radius: 50%;
 }
 
-.card_bg {
-  /* background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%); */
-  background-image: url('../img/v960-ning-19.jpg');
+/*BORRAR*/
+.logo-result{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
 .card_bg:hover {
@@ -352,12 +354,61 @@ body {
   align-items: center;
 }
 
+/* Tables */
+
 .thead-background {
   /* background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); */
   background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
   /* background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%); */
 }
 
+.historic {
+  background-color: rgb(41, 39, 39);
+  padding: .5rem 1rem .5rem 1rem;
+  color: white;
+  margin: 0 0 .1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.historic_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.historic_team {
+  margin: 0 .5rem 0 .5rem;
+  display: flex;
+  flex-direction: wrap;
+  align-items: center;
+}
+
+.historic_score {
+  -webkit-text-size-adjust: 100%;
+  list-style-type: none;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  width: 6.6rem;
+  text-align: center;
+  /* background: #111111; */
+  color: #fff;
+  font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+  line-height: 2.5rem;
+}
+
+.historic_logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 .5rem 0 .5rem;
+}
 /* Footer Social Icons*/
 
 .ft ul {
@@ -410,5 +461,17 @@ body {
 @media (max-width: 767px) {
   .navbar_title {
     font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hidden-xs {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .hidden-md {
+    display: none;
   }
 }
