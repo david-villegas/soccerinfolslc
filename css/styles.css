@@ -15,6 +15,10 @@ body {
 }
 
 /* Navbar */
+#navbar_title {
+  margin-bottom: 0rem !important;
+}
+
 .link {
   position: relative;
 }
@@ -277,7 +281,7 @@ body {
   padding: 0;
   display: block;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   letter-spacing: 0;
   color: #000000;
   text-align: left;
@@ -290,7 +294,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   letter-spacing: 0;
   color: #000000;
   display: inline-block;
@@ -306,10 +310,22 @@ body {
   padding: 0;
   display: block;
   font-weight: 300;
-  margin-bottom: 0.25rem;
   font-size: 0.875rem;
   text-align: left;
 }
+
+.flex-card-details-category {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-weight: 300;
+  /* margin-bottom: 0.25rem; */
+  font-size: 0.875rem;
+  text-align: left;
+}
+
 .flex-card-details-site {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-weight: 300;
@@ -442,6 +458,9 @@ body {
 @media (max-width: 767px) {
   .navbar_title {
     font-size: 1.3rem;
+  }
+  #navbar_title {
+    margin-bottom: 0rem !important;
   }
 }
 
