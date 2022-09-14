@@ -353,11 +353,11 @@ body {
 
 /* Tables */
 
-.thead-background {
+/* .thead-background { */
   /* background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); */
-  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+  /* background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%); */
   /* background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%); */
-}
+/* } */
 
 .historic {
   background-color: rgb(41, 39, 39);
@@ -406,6 +406,7 @@ body {
   border-radius: 50%;
   margin: 0 .5rem 0 .5rem;
 }
+
 /* Footer Social Icons*/
 
 .ft ul {
