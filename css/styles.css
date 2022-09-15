@@ -65,7 +65,7 @@ body {
 }
 
 .carousel-item img{
-  height: 100vh;
+  /* height: auto; */
   object-fit: cover;
   object-position: center;
   overflow: hidden;
