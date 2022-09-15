@@ -19,6 +19,14 @@ body {
   margin-bottom: 0rem !important;
 }
 
+.nav-tabs a {
+  color: #000000;
+}
+
+.nav-tabs a:hover {
+  color: #495057;
+}
+
 .link {
   position: relative;
 }
