@@ -27,7 +27,7 @@
             <a class="nav-link link" href="index.html">Inicio</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link link">Categorías<span class="sr-only">(current)</span></a>
+            <a class="nav-link link">Plantillas<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Copas y Ligas</a>
@@ -35,7 +35,7 @@
               <a class="dropdown-item link disabled" href="liga-colegial.html">Liga Colegial</a>
               <a class="dropdown-item link" href="liga-piporossi.html">Liga Pipo Rossi</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item link" href="resultados.html">Resultados</a>
+              <a class="dropdown-item link" href="resultados.html">Estadísticas</a>
           </li>
           <li class="nav-item">
             <a class="nav-link link" href="galeria.html">Galería</a>
@@ -50,7 +50,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-12 mb-5">
-          <h1 class="text-center">Categorías</h1>
+          <h1 class="text-center"><u>Plantillas</u></h1>
         </div>
         <!-- TABLES -->
         <div class="container-fluid">
@@ -61,37 +61,14 @@
               <table class="table table-sm table-striped table-dark rounded">
                 <thead>
                   <tr>
-                    <th scope="col" class="border-top-0">#</th>
+                    <th scope="col" class="border-top-0 text-center">#</th>
                     <th scope="col">Nombre</th>
                     <th scope="col">Edad</th>
                     <th scope="col" class="border-top-0">Pos</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark Otto</td>
-                    <td>7</td>
-                    <td>Portero</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob Thornton</td>
-                    <td>7</td>
-                    <td>Defensa</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Larry the Bird</td>
-                    <td>7</td>
-                    <td>Medio</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>Michael Jordan</td>
-                    <td>7</td>
-                    <td>Delantero</td>
-                  </tr>
+                <tbody class="player_list">
+
                 </tbody>
               </table>
             </div>
@@ -99,15 +76,21 @@
               <h4 class="text-center"><u>Sub-11</u></h4>
               <h6>Entrenador: <span class="font-weight-bold font-italic">Edwin Gil</span></h6>
               <table class="table table-sm table-striped table-dark rounded">
-                <thead>
+                <thead class="player_head">
                   <tr>
-                    <th scope="col" class="border-top-0">#</th>
+                    <th scope="col" class="border-top-0 text-center">#</th>
                     <th scope="col">Nombre</th>
                     <th scope="col">Edad</th>
                     <th scope="col" class="border-top-0">Pos</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody class="player_list">
+                  <tr>
+                    <th>1</th>
+                    <td>Matías Villegas</td>
+                    <td>11</td>
+                    <td>Portero</td>
+                  </tr>
                   <tr>
                     <th>1</th>
                     <td>Guillermo Lacruz</td>
@@ -115,16 +98,64 @@
                     <td>Portero</td>
                   </tr>
                   <tr>
-                    <th>#</th>
-                    <td>Maximiliano Pérez</td>
+                    <th>18</th>
+                    <td>Fabián Fernández</td>
                     <td>10</td>
-                    <td>Pendiente</td>
+                    <td>Defensa</td>
                   </tr>
                   <tr>
-                    <th>#</th>
+                    <th>99</th>
+                    <td>Sara Lacruz</td>
+                    <td>10</td>
+                    <td>Defensa</td>
+                  </tr>
+                  <tr>
+                    <th>16</th>
                     <td>Rafael Espinoza</td>
                     <td>10</td>
                     <td>Defensa</td>
+                  </tr>
+                  <tr>
+                    <th>89</th>
+                    <td>Sebastián Leal</td>
+                    <td>10</td>
+                    <td>Defensa</td>
+                  </tr>
+                  <tr>
+                    <th>12</th>
+                    <td>Daniel Velásquez</td>
+                    <td>11</td>
+                    <td>Med / Del</td>
+                  </tr>
+                  <tr>
+                    <th>#</th>
+                    <td>Diego Velásquez</td>
+                    <td>11</td>
+                    <td>Med / Del</td>
+                  </tr>
+                  <tr>
+                    <th>11</th>
+                    <td>Diego Rivas</td>
+                    <td>10</td>
+                    <td>Medio</td>
+                  </tr>
+                  <tr>
+                    <th>9</th>
+                    <td>Mauricio Fernández</td>
+                    <td>11</td>
+                    <td>Med / Del</td>
+                  </tr>
+                  <tr>
+                    <th>77</th>
+                    <td>Gabriel Cedeño</td>
+                    <td>11</td>
+                    <td>Med /Del</td>
+                  </tr>
+                  <tr>
+                    <th>4</th>
+                    <td>Juan Pablo Ferreira</td>
+                    <td>10</td>
+                    <td>Delantero</td>
                   </tr>
                   <tr>
                     <th>7</th>
@@ -133,70 +164,28 @@
                     <td>Delantero</td>
                   </tr>
                   <tr>
-                    <th>#</th>
-                    <td>Sebastián Leal</td>
-                    <td>10</td>
-                    <td>Pendiente</td>
-                  </tr>
-                  <tr>
-                    <th>#</th>
-                    <td>Francisco López</td>
-                    <td>10</td>
-                    <td>Pendiente</td>
-                  </tr>
-                  <tr>
-                    <th>#</th>
-                    <td>Daniel Velásquez</td>
-                    <td>10</td>
-                    <td>Medio</td>
-                  </tr>
-                  <tr>
-                    <th>#</th>
-                    <td>Diego Velásquez</td>
-                    <td>10</td>
-                    <td>Delantero</td>
-                  </tr>
-                  <tr>
-                    <th>8</th>
-                    <td>Diego Rivas</td>
-                    <td>10</td>
-                    <td>Delantero</td>
-                  </tr>
-                  <tr>
-                    <th>25</th>
-                    <td>Fabián Fernández</td>
-                    <td>10</td>
-                    <td>Defensa</td>
-                  </tr>
-                  <tr>
-                    <th>#</th>
-                    <td>Sara Lacruz</td>
-                    <td>10</td>
-                    <td>Defensa</td>
-                  </tr>
-                  <tr>
-                    <th>#</th>
-                    <td>Juan Pablo Ferreira</td>
-                    <td>10</td>
-                    <td>Medio</td>
-                  </tr>
-                  <tr>
-                    <th>#</th>
-                    <td>Mauricio Fernández</td>
-                    <td>10</td>
-                    <td>Medio</td>
-                  </tr>
-                  <tr>
-                    <th>#</th>
-                    <td>Gabriel Cedeño</td>
-                    <td>10</td>
-                    <td>Medio</td>
-                  </tr>
-                  <tr>
                     <th>74</th>
                     <td>Joaquín Villegas</td>
                     <td>10</td>
                     <td>Delantero</td>
+                  </tr>
+                  <tr>
+                    <th>21</th>
+                    <td>Santiago Da Silva</td>
+                    <td>10</td>
+                    <td>Delantero</td>
+                  </tr>
+                  <tr>
+                    <th>22</th>
+                    <td>Maximiliano Pérez</td>
+                    <td>11</td>
+                    <td>Pendiente</td>
+                  </tr>
+                  <tr>
+                    <th>24</th>
+                    <td>Francisco López</td>
+                    <td>10</td>
+                    <td>Pendiente</td>
                   </tr>
                 </tbody>
               </table>
@@ -208,79 +197,134 @@
           <div class="row justify-content-center">
             <div class="col-md-6">
               <h4 class="text-center"><u>Sub-13</u></h4>
-              <h6>Entrenador: <span class="font-weight-bold font-italic">Renier ...</span></h6>
+              <h6>Entrenador: <span class="font-weight-bold font-italic">Por Definir</span></h6>
               <table class="table table-sm table-striped table-dark rounded">
                 <thead>
                   <tr>
-                    <th scope="col" class="border-top-0">#</th>
+                    <th scope="col" class="border-top-0 text-center">#</th>
                     <th scope="col">Nombre</th>
                     <th scope="col">Edad</th>
                     <th scope="col" class="border-top-0">Pos</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Matías Villegas</td>
-                    <td>11</td>
-                    <td>Portero</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob Thornton</td>
-                    <td>10</td>
-                    <td>Defensa</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Larry the Bird</td>
-                    <td>10</td>
-                    <td>Medio</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>Michael Jordan</td>
-                    <td>10</td>
-                    <td>Delantero</td>
-                  </tr>
+                <tbody class="player_list">
+
                 </tbody>
               </table>
             </div>
             <div class="col-md-6">
               <h4 class="text-center"><u>Sub-15</u></h4>
-              <h6>Entrenador: <span class="font-weight-bold font-italic">Por Definir...</span></h6>
+              <h6>Entrenador: <span class="font-weight-bold font-italic">Ángelo Guzmán</span></h6>
               <table class="table table-sm table-striped table-dark rounded">
                 <thead>
                   <tr>
-                    <th scope="col" class="border-top-0">#</th>
+                    <th scope="col" class="border-top-0 text-center">#</th>
                     <th scope="col">Nombre</th>
                     <th scope="col">Edad</th>
                     <th scope="col" class="border-top-0">Pos</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody class="player_list">
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark Otto</td>
-                    <td>12</td>
+                    <th>79</th>
+                    <td>Miguel Arguello</td>
+                    <td>15</td>
                     <td>Portero</td>
                   </tr>
                   <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob Thornton</td>
-                    <td>12</td>
+                    <th>14</th>
+                    <td>Sebastián Vivas</td>
+                    <td>14</td>
+                    <td>Portero</td>
+                  </tr>
+                  <tr>
+                    <th>31</th>
+                    <td>David Ferreira</td>
+                    <td>14</td>
+                    <td>Pendiente</td>
+                  </tr>
+                  <tr>
+                    <th>21</th>
+                    <td>David Yusty</td>
+                    <td>15</td>
                     <td>Defensa</td>
                   </tr>
                   <tr>
-                    <th scope="row">3</th>
-                    <td>Larry the Bird</td>
-                    <td>12</td>
+                    <th>27</th>
+                    <td>Miguel Merola</td>
+                    <td>14</td>
+                    <td>Delantero</td>
+                  </tr>
+                  <tr>
+                    <th>80</th>
+                    <td>Óscar Peña</td>
+                    <td>14</td>
+                    <td>Pendiente</td>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                    <td>David Esmeral</td>
+                    <td>14</td>
+                    <td>Pendiente</td>
+                  </tr>
+                  <tr>
+                    <th>3</th>
+                    <td>Francisco Villegas</td>
+                    <td>15</td>
                     <td>Medio</td>
                   </tr>
                   <tr>
-                    <th scope="row">4</th>
-                    <td>Michael Jordan</td>
-                    <td>12</td>
+                    <th>4</th>
+                    <td>Manuel Malave</td>
+                    <td>14</td>
+                    <td>Delantero</td>
+                  </tr>
+                  <tr>
+                    <th>17</th>
+                    <td>Abraham Rivas</td>
+                    <td>15</td>
+                    <td>Delantero</td>
+                  </tr>
+                  <tr>
+                    <th>81</th>
+                    <td>Samuel Briceño</td>
+                    <td>15</td>
+                    <td>Defensa</td>
+                  </tr>
+                  <tr>
+                    <th>29</th>
+                    <td>Ernesto Navarro</td>
+                    <td>15</td>
+                    <td>Defensa</td>
+                  </tr>
+                  <tr>
+                    <th>24</th>
+                    <td>Jesús Araujo</td>
+                    <td>14</td>
+                    <td>Medio</td>
+                  </tr>
+                  <tr>
+                    <th>7</th>
+                    <td>Giovanny Osio</td>
+                    <td>14</td>
+                    <td>Medio</td>
+                  </tr>
+                  <tr>
+                    <th>1</th>
+                    <td>Isaac Perez</td>
+                    <td>14</td>
+                    <td>Medio</td>
+                  </tr>
+                  <tr>
+                    <th>12</th>
+                    <td>Anibal Medrano</td>
+                    <td>14</td>
+                    <td>Delantero</td>
+                  </tr>
+                  <tr>
+                    <th>5</th>
+                    <td>Ángel Arroyo</td>
+                    <td>14</td>
                     <td>Delantero</td>
                   </tr>
                 </tbody>

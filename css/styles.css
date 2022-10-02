@@ -1,7 +1,15 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 html * {
-  font-family: 'Bree Serif', serif;
+  /* font-family: 'Bree Serif', serif; */
+  /* font-family: 'Lobster', cursive; */
+  font-family: 'Courgette', cursive;
+  /* font-family: 'Pacifico', cursive; */
+  /* font-family: 'Kalam', cursive; */
 }
 
 body {
@@ -76,7 +84,7 @@ body {
 
 /* Site Setcion */
 .site-section {
-  padding: 2em 0;
+  padding: 5em 0 2em 0;
 }
 
 .img-team img {
@@ -372,6 +380,10 @@ body {
 .table tbody tr td {
   vertical-align: middle!important;
 }
+
+.player_list tr th{
+  text-align: center;
+}
 /* .thead-background { */
   /* background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); */
   /* background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%); */
@@ -425,6 +437,17 @@ body {
   height: 30px;
   border-radius: 50%;
   margin: 0 .5rem 0 .5rem;
+}
+
+.glosario h4,
+.glosario ul li,
+.glosario span{
+  font-family: 'Bree Serif', serif;
+}
+
+.glosario ul{
+  list-style: none;
+  padding-left: 0;
 }
 
 /* Footer Social Icons*/
