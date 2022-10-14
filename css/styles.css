@@ -81,13 +81,6 @@ body {
 
 /* Gallery */
 
-h2 {
-  font-weight: 400;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 40px;
-}
-
 .linea {
   background-color: #550b51;
   height: 5px;
@@ -185,24 +178,7 @@ h2 {
   height: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* /Gallery */
+/* End Gallery */
 
 
 /* Site Setcion */
