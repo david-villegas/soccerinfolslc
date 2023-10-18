@@ -4,6 +4,11 @@ body {
     color: #002060;
   }
 
+  section, .promo{
+    display: grid;
+    place-content: center;
+}
+
 /* _________________________________________________________________________ */
 
 .img-promo-3{
