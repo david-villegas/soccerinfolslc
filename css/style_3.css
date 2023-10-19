@@ -1,16 +1,80 @@
 /* Base */
 body {
-    font-family: Verdana,"sans-serif";
-    color: #002060;
-  }
+  font-family: Verdana,"sans-serif";
+  color: #002060;
+}
 
-  section, .promo{
-    display: grid;
-    place-content: center;
+.container{
+  display: flex;
+}
+.container-fluid{
+  padding: 5px 50px 5px 50px;
+}
+.img-ppal{
+  display: grid;
+  place-content: center;
+}
+
+.img-sec{
+  height: 300px !important;
+  /* width: 339px; */
+}
+
+h1.title-ppal{
+  text-align: center;
+  color: red;
+}
+
+h4.text-ppal{
+  font-style: italic;
+}
+
+.email-mon{
+  font-weight: bold;
+}
+
+.logo{
+  display: grid;
+  place-content: center;
+}
+
+.img-logo{
+  width: 389px;
 }
 
 /* _________________________________________________________________________ */
 
+section, .mail-header, .mail-footer, .end-footer, .promo, h3{
+  display: grid;
+  place-content: center;
+}
+
+.info{
+  color: rgb(228,108,10);
+}
+
+.mail-header{
+  margin-top: 50px;
+}
+
+/* section > h1, h4, p{
+  text-align: center;
+} */
+
+.goto > a{
+  color: rgb(228,108,10);
+  color:gb(228,108,10);
+  text-decoration: none;
+}
+
+.img-promo{
+  width: 720px;
+}
+
+.img-promo-2{
+  height: 550px;
+}
+
 .img-promo-3{
-    width: 750px;
+  width: 720px;
 }
