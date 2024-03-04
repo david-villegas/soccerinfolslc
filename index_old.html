@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/img/soccer-ball.ico">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/5e6c28720b.js" crossorigin="anonymous"></script>
+  <title>Fútbol La Salle La Colina</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="/img/logo-bar.png" alt="La Salle La Colina" height="50">
+      </a>
+      <h2 id="navbar_title" class="navbar_title">Fútbol La Salle La Colina</h2>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link link">Inicio<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link" href="categories.html">Plantillas</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Copas y Ligas</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item link disabled" href="liga-colegial.html">Liga Colegial</a>
+              <a class="dropdown-item link" href="liga-piporossi.html">Liga Pipo Rossi</a>
+              <a class="dropdown-item link" href="copa-navidad.html">Copa Navidad</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item link" href="resultados.html">Estadísticas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link" href="galeria.html">Galería</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CAROUSEL -->
+  <div class="pt-carousel">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/img/sub-9.jpg" class="w-100 img-fluid" alt="...">
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h5>Sub-10 Colegial</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div> -->
+        </div>
+        <div class="carousel-item">
+          <img src="/img/sub11-2.jpg" class="w-100 img-fluid" alt="...">
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h5>Sub-12 Colegial</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div> -->
+        </div>
+        <div class="carousel-item">
+          <img src="/img/sub-13.jpeg" class="w-100 img-fluid" alt="...">
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h5>Sub-15 Colegial</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div> -->
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-target="#carouselExampleFade" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div id="resultados" class="site-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mb-5">
+          <h1 class="text-center">Últimos Resultados</h1>
+        </div>
+        <!-- NAV PILLS -->
+        <div class="col-md-12">
+          <nav>
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <a class="nav-link active" id="nav-sub-9-tab" data-toggle="tab" href="#nav-sub-9" role="tab" aria-controls="nav-sub-9" aria-selected="true">Sub 9</a>
+              <a class="nav-link" id="nav-sub-11-tab" data-toggle="tab" href="#nav-sub-11" role="tab" aria-controls="nav-sub-11" aria-selected="false">Sub 11</a>
+              <a class="nav-link" id="nav-sub-13-tab" data-toggle="tab" href="#nav-sub-13" role="tab" aria-controls="nav-sub-13" aria-selected="false">Sub 13</a>
+              <a class="nav-link" id="nav-sub-15-tab" data-toggle="tab" href="#nav-sub-15" role="tab" aria-controls="nav-sub-15" aria-selected="false">Sub 15</a>
+            </div>
+          </nav>
+
+          <!-- RESULTS -->
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-sub-9" role="tabpanel" aria-labelledby="nav-sub-9">
+              <div class="container results">
+                <div class="row py-4 text-center">
+                  <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="img-team">
+                      <img src="/img/logo-bar-fb.png">
+                    </div>
+                    <div class="ml-3">La Salle La Colina</div>
+                  </div>
+                  <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="bg-dark py-2 pl-3 pr-3 text-white rounded">2 : 1</div>
+                  </div>
+                  <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="mr-3">CSC Futuros Vinotintos</div>
+                    <div class="img-team">
+                      <img src="/img/Logo_CSC.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container results">
+                <div class="row py-4 text-center">
+                  <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="img-team">
+                      <img src="/img/logo-bar-fb.png">
+                    </div>
+                    <div class="ml-3">La Salle La Colina</div>
+                  </div>
+                  <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="bg-dark py-2 pl-3 pr-3 text-white rounded">2 : 4</div>
+                  </div>
+                  <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="mr-3">Los Castores</div>
+                    <div class="img-team">
+                      <img src="/img/Castores.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-sub-11" role="tabpanel" aria-labelledby="nav-sub-11-tab">
+              <div class="container results">
+                <div class="row py-4 text-center">
+                  <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="img-team">
+                      <img src="/img/AEF.png">
+                    </div>
+                    <div class="ml-3">AEF Macaracuay</div>
+                  </div>
+                  <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="bg-dark py-2 pl-3 pr-3 text-white rounded">4 : 1</div>
+                  </div>
+                  <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="mr-3">La Salle La Colina</div>
+                    <div class="img-team">
+                      <img src="/img/logo-bar.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container results">
+                <div class="row py-4 text-center">
+                  <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="img-team">
+                      <img src="/img/AEF.png">
+                    </div>
+                    <div class="ml-3">AEF CIC</div>
+                  </div>
+                  <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="bg-dark py-2 pl-3 pr-3 text-white rounded">2 : 3</div>
+                  </div>
+                  <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="mr-3">La Salle La Colina</div>
+                    <div class="img-team">
+                      <img src="/img/logo-bar-fb.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-sub-13" role="tabpanel" aria-labelledby="nav-sub-13-tab">
+              <div class="container results">
+                <div class="row py-4 text-center">
+                  <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="img-team">
+                      <img src="/img/Castores.png">
+                    </div>
+                    <div class="ml-3">Dvo. Los Castores</div>
+                  </div>
+                  <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="bg-dark py-2 pl-3 pr-3 text-white rounded">1 : 0</div>
+                  </div>
+                  <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="mr-3">La Salle La Colina</div>
+                    <div class="img-team">
+                      <img src="/img/logo-bar.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container results">
+                <div class="row py-4 text-center">
+                  <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="img-team">
+                      <img src="/img/logo-bar-fb.png" alt="">
+                    </div>
+                    <div class="ml-3">La Salle La Colina</div>
+                  </div>
+                  <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="bg-dark py-2 pl-3 pr-3 text-white rounded">2 : 0</div>
+                  </div>
+                  <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="mr-3">Culb Hebraica</div>
+                    <div class="img-team">
+                      <img src="/img/hebraica.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-sub-15" role="tabpanel" aria-labelledby="nav-sub-15-tab">
+              <div class="container results">
+                <div class="row py-4 text-center">
+                  <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="img-team">
+                      <img src="/img/santiago_leon.png" alt="">
+                    </div>
+                    <div class="ml-3">Santiago León</div>
+                  </div>
+                  <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="bg-dark py-2 pl-3 pr-3 text-white rounded">1 : 0</div>
+                  </div>
+                  <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="mr-3">La Salle La Colina</div>
+                    <div class="img-team">
+                      <img src="/img/logo-bar-fb.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container results">
+                <div class="row py-4 text-center">
+                  <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="img-team">
+                      <img src="/img/logo-bar.png" alt="">
+                    </div>
+                    <div class="ml-3">La Salle La Colina</div>
+                  </div>
+                  <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="bg-dark py-2 pl-3 pr-3 text-white rounded">1 : 2</div>
+                  </div>
+                  <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="mr-3">Santiago León</div>
+                    <div class="img-team">
+                      <img src="/img/santiago_leon.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END RESULTS -->
+        </div>
+        <!-- END NAV PILLS -->
+      </div>
+    </div>
+    <!-- SECTION NEXT MATCHES -->
+    <div class="container-fluid mt-5">
+      <h1 class="text-center">Próximos juegos</h1>
+      <div class="mt-5">
+        <div class="flex-container">
+
+        </div>
+      </div>
+    </div>
+    <!-- END SECTION NEXT MATCHES -->
+    <!-- MODAL SECTION -->
+    <div class="modal-section">
+      <div class="modal fade" id="sub9" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="sub9Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="sub9Label">Lista de Convocados</h5>
+              <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button> -->
+            </div>
+            <div class="modal-body">
+              <table class="table table-sm table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col" class="text-center">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Pos</th>
+                  </tr>
+                </thead>
+                <tbody class="player_list">
+                  <tr>
+                    <th>1</th>
+                    <td>Samuel Contreras</td>
+                    <td>Portero</td>
+                  </tr>
+                  <tr>
+                    <th>12</th>
+                    <td>Fernando Dos Santos</td>
+                    <td>Defensa</td>
+                  </tr>
+                  <tr>
+                    <th>22</th>
+                    <td>Adrián Roso</td>
+                    <td>Defensa</td>
+                  </tr>
+                  <tr>
+                    <th>24</th>
+                    <td>José Cañizares</td>
+                    <td>Defensa</td>
+                  </tr>
+                  <tr>
+                    <th>15</th>
+                    <td>Luis Roa</td>
+                    <td>Medio</td>
+                  </tr>
+                  <tr>
+                    <th>17</th>
+                    <td>Luis Contreras</td>
+                    <td>Delantero</td>
+                  </tr>
+                  <tr>
+                    <th>14</th>
+                    <td>Santiago De Souza</td>
+                    <td>Medio</td>
+                  </tr>
+                  <tr>
+                    <th>8</th>
+                    <td>Alejandro Matamoros</td>
+                    <td>Medio</td>
+                  </tr>
+                  <tr>
+                    <th>18</th>
+                    <td>José Ángel Caceres</td>
+                    <td>Medio</td>
+                  </tr>
+                  <tr>
+                    <th>10</th>
+                    <td>Luis Mendoza</td>
+                    <td>Defensa</td>
+                  </tr>
+                  <tr>
+                    <th>10</th>
+                    <td>Diego Tovar</td>
+                    <td>Delantero</td>
+                  </tr>
+                  <tr>
+                    <th>27</th>
+                    <td>Noah Da Silva</td>
+                    <td>Medio</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>Google Maps: <a href=""><i class="fa-solid fa-location-dot"></i></a></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="sub11" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="sub11Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="sub9Label">Lista de Convocados</h5>
+            </div>
+            <div class="modal-body">
+              <table class="table table-sm table-striped">
+                <thead class="player_head">
+                  <tr>
+                    <th scope="col" class="text-center">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col" class="">Pos</th>
+                  </tr>
+                </thead>
+                <tbody class="player_list">
+                  <tr>
+                    <th>1</th>
+                    <td>Matías Villegas</td>
+                    <td>Portero</td>
+                  </tr>
+                  <tr>
+                    <th>16</th>
+                    <td>Rafael Espinoza</td>
+                    <td>Defensa</td>
+                  </tr>
+                  <tr>
+                    <th>18</th>
+                    <td>Fabián Fernández</td>
+                    <td>Defensa</td>
+                  </tr>
+                  <tr>
+                    <th>22</th>
+                    <td>Maximiliano Pérez</td>
+                    <td>Defensa</td>
+                  </tr>
+                  <tr>
+                    <th>24</th>
+                    <td>Francisco López-Mendez</td>
+                    <td>Defensa</td>
+                  </tr>
+                  <tr>
+                    <th>77</th>
+                    <td>Gabriel Cedeño</td>
+                    <td>Med /Del</td>
+                  </tr>
+                  <tr>
+                    <th>12</th>
+                    <td>Daniel Velásquez</td>
+                    <td>Med / Del</td>
+                  </tr>
+                  <tr>
+                    <th>37</th>
+                    <td>Diego Velásquez</td>
+                    <td>Med / Del</td>
+                  </tr>
+                  <tr>
+                    <th>11</th>
+                    <td>Diego Rivas</td>
+                    <td>Medio</td>
+                  </tr>
+                  <tr>
+                    <th>74</th>
+                    <td>Joaquín Villegas</td>
+                    <td>Delantero</td>
+                  </tr>
+                  <tr>
+                    <th>21</th>
+                    <td>Santiago Da Silva</td>
+                    <td>Delantero</td>
+                  </tr>
+                  <tr>
+                    <th>7</th>
+                    <td>Isaac Segura</td>
+                    <td>Delantero</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>Google Maps: <a href=""><i class="fa-solid fa-location-dot"></i></a></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="sub13" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="sub13Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="sub9Label">Lista de Convocados</h5>
+              <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button> -->
+            </div>
+            <div class="modal-body">
+              <table class="table table-sm table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col" class="text-center">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Pos</th>
+                  </tr>
+                </thead>
+                <tbody class="player_list">
+                  <tr>
+                    <th>#</th>
+                    <td>Lionel Tovar</td>
+                    <td>Defensa</td>
+                  </tr>
+                  <tr>
+                    <th>#</th>
+                    <td>Diego Carrero</td>
+                    <td>Defensa</td>
+                  </tr>
+                  <tr>
+                    <th>1</th>
+                    <td>Sebastian Presas</td>
+                    <td>Portero</td>
+                  </tr>
+                  <tr>
+                    <th>#</th>
+                    <td>Roberto Rodríguez</td>
+                    <td>Medio</td>
+                  </tr>
+                  <tr>
+                    <th>#</th>
+                    <td>Carlos Galvis</td>
+                    <td>Medio</td>
+                  </tr>
+                  <tr>
+                    <th>#</th>
+                    <td>Allen Diaz</td>
+                    <td>Medio</td>
+                  </tr>
+                  <tr>
+                    <th>#</th>
+                    <td>Santiago Leon</td>
+                    <td>Defensa</td>
+                  </tr>
+                  <tr>
+                    <th>#</th>
+                    <td>Alfonso Gil</td>
+                    <td>Defensa</td>
+                  </tr>
+                  <tr>
+                    <th>1</th>
+                    <td>Joiner Osio</td>
+                    <td>Portero</td>
+                  </tr>
+                  <tr>
+                    <th>#</th>
+                    <td>Daniel Barrios</td>
+                    <td>Defensa</td>
+                  </tr>
+                  <tr>
+                    <th>#</th>
+                    <td>Sebastián Urdaneta</td>
+                    <td>Delantero</td>
+                  </tr>
+                  <tr>
+                    <th>#</th>
+                    <td>Juan Manuel Acosta</td>
+                    <td>Delantero</td>
+                  </tr>
+                  <tr>
+                    <th>#</th>
+                    <td>Óscar Carballo</td>
+                    <td>Delantero</td>
+                  </tr>
+                  <tr>
+                    <th>#</th>
+                    <td>Samuel Moniz</td>
+                    <td>Defensa</td>
+                  </tr>
+                  <tr>
+                    <th>#</th>
+                    <td>David Ochoa</td>
+                    <td>Defensa</td>
+                  </tr>
+                  <tr>
+                    <th>#</th>
+                    <td>Carlos Campinos</td>
+                    <td>Defensa</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>Google Maps: <a href="https://maps.app.goo.gl/aTp85RRyJz1sT3yQ7"><i class="fa-solid fa-location-dot"></i></a></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="sub15" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="sub15Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="sub9Label">Lista de Convocados</h5>
+            </div>
+            <div class="modal-body">
+              <table class="table table-sm table-striped">
+                <thead class="player_head">
+                  <tr>
+                    <th scope="col" class="text-center">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col" class="">Pos</th>
+                  </tr>
+                </thead>
+                <tbody class="player_list">
+                  <tr>
+                    <th>1</th>
+                    <td>Isaac Perez</td>
+                    <td>Portero</td>
+                  </tr>
+                  <tr>
+                    <th>17</th>
+                    <td>Abraham Rivas</td>
+                    <td>Defensa</td>
+                  </tr>
+                  <tr>
+                    <th>29</th>
+                    <td>Ernesto Navarro</td>
+                    <td>Defensa</td>
+                  </tr>
+                  <tr>
+                    <th>##</th>
+                    <td>Diego Pereira</td>
+                    <td>Medio</td>
+                  </tr>
+                  <tr>
+                    <th>14</th>
+                    <td>Sebastián Vivas</td>
+                    <td>Medio</td>
+                  </tr>
+                  <tr>
+                    <th>##</th>
+                    <td>Rasha Franco</td>
+                    <td>Defensa</td>
+                  </tr>
+                  <tr>
+                    <th>31</th>
+                    <td>David Ferreira</td>
+                    <td>Defensa</td>
+                  </tr>
+                  <tr>
+                    <th>81</th>
+                    <td>Samuel Briceño</td>
+                    <td>Defensa</td>
+                  </tr>
+                  <tr>
+                    <th>80</th>
+                    <td>Óscar Peña</td>
+                    <td>Delantero</td>
+                  </tr>
+                  <tr>
+                    <th>##</th>
+                    <td>Moises Guillén</td>
+                    <td>Delantero</td>
+                  </tr>
+                  <tr>
+                    <th>79</th>
+                    <td>Miguel Arguello</td>
+                    <td>Delantero</td>
+                  </tr>
+                  <tr>
+                    <th>27</th>
+                    <td>Miguel Merola</td>
+                    <td>Defensa</td>
+                  </tr>
+                  <tr>
+                    <th>3</th>
+                    <td>Francisco Villegas</td>
+                    <td>Delantero</td>
+                  </tr>
+                  <tr>
+                    <th>21</th>
+                    <td>David Justin</td>
+                    <td>Medio</td>
+                  </tr>
+                  <tr>
+                    <th>24</th>
+                    <td>Jesús Araujo</td>
+                    <td>Medio</td>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                    <td>David Esmeral</td>
+                    <td>Delantero</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>Google Maps: <a href="https://maps.app.goo.gl/aTp85RRyJz1sT3yQ7"><i class="fa-solid fa-location-dot"></i></a></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END MODAL SECTION -->
+  </div>
+  <!-- END CONTENT -->
+
+  <!-- FOOTER -->
+  <footer class="pt-2 pb-2 bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="ft col-lg-12">
+          <ul>
+            <li><a class="pp-instagram" href="https://www.instagram.com/futbollasalle1/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a class="pp-twitter" href=""><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a class="pp-whatsapp" href="https://l.instagram.com/?u=https%3A%2F%2Fbit.ly%2F3oFj6gy&e=ATPeXlfBUdBKWANtmGYceFznoHYivkQePnF1Pi1zWOudy5JoxvK7k2ZJReLO7h32EOoNMy9tHYQlRUwjnT_aUg&s=1" target="_blank"><i class="fa-brands fa-whatsapp"></i></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="m-0 text-center text-white">&copy; 2022 Copyright: David Villegas</p>
+    </div>
+  </footer>
+<!-- END FOOTER -->
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  <!-- <script src="/js/smoothscroll.js"></script> -->
+</body>
+</html>
